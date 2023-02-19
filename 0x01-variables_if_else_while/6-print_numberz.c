@@ -9,12 +9,11 @@
 
 int main(void)
 {
-	int x = 0;
+	int n;
 
-	while (x < 10)
+	for (n = '0'; n <= '9'; n++)
 	{
-	putchar(x);
-	x++;
+	putchar(n);
 	}
 	putchar('\n');
 	return (0);
