@@ -12,12 +12,19 @@ int main(void)
 	int i;
 	long f = 1, s = 2, n;
 
-	printf("%ld, %ld, ", f, s);
+	printf("%ld, %ld", f, s);
 
 	for (i = 3; i <= 50; i++)
 	{
 	n = f + s;
+	if (i == 50)
+	{
 	printf(", %ld", n);
+	}
+	else
+	{
+	printf(", %ld", n);
+	}
 	f = s;
 	s = n;
 	}
