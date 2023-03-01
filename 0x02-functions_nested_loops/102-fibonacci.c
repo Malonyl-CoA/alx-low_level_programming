@@ -8,16 +8,16 @@
 
 int main(void)
 
-{	
+{
 	int i;
-	long long f = 1, s = 2, n;
+	long f = 1, s = 2, n;
 
-	printf("%lld, %lld, ", f, s);
+	printf("%ld, %ld, ", f, s);
 
 	for (i = 3; i <= 50; i++)
 	{
 	n = f + s;
-	printf("%lld, ", n);
+	printf("%ld, ", n);
 	f = s;
 	s = n;
 	}
