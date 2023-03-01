@@ -3,23 +3,24 @@
 /**
  * main - print first 50 fibonacci numbers
  *
- * Retur: 0 (success)
+ * Return: 0 (success)
  */
 
 int main(void)
 
-{
-	int first = 1, second = 2, next;
+{	
+	int i;
+	int f = 1, s = 2, n;
 
-	printf("%d, %d, ", first, second);
+	printf("%d, %d, ", f, s);
 
-	for (int i = 3; i <= 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
-	next = first + second;
-	printf("%d, ", next);
-	first = second;
-	second = next;
+	n = f + s;
+	printf("%d, ", n);
+	f = s;
+	s = n;
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
